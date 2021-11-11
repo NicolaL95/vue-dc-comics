@@ -27,56 +27,52 @@
         </div>
       </div>
     </div>
-    <div class="dc_table">
-      <table>
-        <thead>
-          <tr>
-            <th>DC COMICS</th>
-            <th>SHOP</th>
-            <th>DC</th>
-            <th>SITES</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Characters</td>
-            <td>Comics</td>
-            <td>Movies</td>
-            <td>TV</td>
-            <td>Games</td>
-            <td>Videos</td>
-            <td>News</td>
-          </tr>
-          <tr>
-            <td>Shop DC</td>
-            <td>Shop DC Coollectibles</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Terms Of Use</td>
-            <td>Privacy policy (New)</td>
-            <td>Ad Choices</td>
-            <td>Advertising</td>
-            <td>Jobs</td>
-            <td>Subscription</td>
-            <td>Talent Workshops</td>
-            <td>CPSC Certificates</td>
-            <td>Ratings</td>
-            <td>Shop Help</td>
-            <td>Coontact Us</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>DC</td>
-            <td>MAD Magazine</td>
-            <td>DC kids</td>
-            <td>DC Universe</td>
-            <td>DC Power Visa</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="bg_table">
+      <div class="dc_table">
+        <div class="table">
+          <p class="table_title">DC COMICS</p>
+          <p class="table_link">Characters</p>
+          <p class="table_link">Comics</p>
+          <p class="table_link">Movies</p>
+          <p class="table_link">TV</p>
+          <p class="table_link">Games</p>
+          <p class="table_link">Videos</p>
+          <p class="table_link">News</p>
+        </div>
+
+        <div class="table">
+          <p class="table_title">SHOP</p>
+          <p class="table_link">Shop DC</p>
+          <p class="table_link">Shop DC Collectibles</p>
+        </div>
+
+        <div class="table">
+          <p class="table_title">DC</p>
+          <p class="table_link">Terms Of Use</p>
+          <p class="table_link">Privacy policy (New)</p>
+          <p class="table_link">Ad Choices</p>
+          <p class="table_link">Advertising</p>
+          <p class="table_link">Jobs</p>
+          <p class="table_link">Subscription</p>
+          <p class="table_link">Talent Workshops</p>
+          <p class="table_link">CPSC Certificates</p>
+          <p class="table_link">Ratings</p>
+          <p class="table_link">Shop Help</p>
+          <p class="table_link">Coontact Us</p>
+        </div>
+
+        <div class="table">
+          <p class="table_title">SITES</p>
+          <p class="table_link">DC</p>
+          <p class="table_link">MAD Magazine</p>
+          <p class="table_link">DC kids</p>
+          <p class="table_link">DC Universe</p>
+          <p class="table_link">DC Power Visa</p>
+        </div>
+      </div>
+      <!-- <div class="logo_container">
+        <img class="logo" src="../assets/dc-logo-bg.png" alt="" />
+      </div> -->
     </div>
   </main>
 </template>
@@ -115,14 +111,34 @@
     padding-left: 10px;
   }
 }
-.dc_table {
+.bg_table {
   background-image: url("../assets/footer-bg.jpg");
+  position: relative;
 }
-th {
+.table_title {
   color: white;
+  padding-bottom: 10px;
 }
 
-td {
+.dc_table {
+  padding: 30px 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 25%;
+}
+.table {
+  width: 160px;
+  padding-bottom: 15px;
+  p {
+    width: 160px;
+  }
+}
+.table_link {
   color: #797979;
+}
+.logo_container {
+  position: absolute;
 }
 </style>
