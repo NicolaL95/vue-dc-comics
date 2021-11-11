@@ -116,6 +116,9 @@
 .bg_table {
   background-image: url("../assets/footer-bg.jpg");
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .table_title {
   color: white;
