@@ -4,6 +4,7 @@
       <button>SIGN-UP NOW!</button>
     </div>
     <nav class="link_container footer_format">
+      <p>Follow Us</p>
       <a href=""><img src="../assets/footer-facebook.png" alt="" /></a>
       <a href=""><img src="../assets/footer-twitter.png" alt="" /></a>
       <a href=""><img src="../assets/footer-youtube.png" alt="" /></a>
@@ -17,4 +18,32 @@
 </script>
 
 <style lang="scss">
+#site_footer {
+  display: flex;
+  background-color: #303030;
+}
+
+.footer_format {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px;
+  button {
+    border: 1px solid #0282f9;
+    padding: 7px;
+    color: white;
+    background-color: transparent;
+  }
+  p {
+    color: #0282f9;
+    padding-right: 10px;
+  }
+  a {
+    padding: 7px;
+    img {
+      height: 25px;
+    }
+  }
+}
 </style>
