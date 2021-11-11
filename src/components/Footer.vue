@@ -21,6 +21,8 @@
 #site_footer {
   display: flex;
   background-color: #303030;
+  z-index: 2;
+  position: relative;
 }
 
 .footer_format {

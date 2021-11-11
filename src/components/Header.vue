@@ -30,12 +30,18 @@
     }
   }
   .link_container {
-    align-items: center;
+    align-items: flex-end;
     a {
       text-decoration: none;
-      padding: 15px;
       font-size: 0.9rem;
       color: black;
+      margin: 0 15px 40px;
+    }
+    a:hover {
+      margin-bottom: 0px;
+      padding-bottom: 37px;
+      border-bottom: 3px solid #0282f9;
+      color: #0282f9;
     }
   }
 }

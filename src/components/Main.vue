@@ -70,9 +70,9 @@
           <p class="table_link">DC Power Visa</p>
         </div>
       </div>
-      <!-- <div class="logo_container">
+      <div class="logo_container">
         <img class="logo" src="../assets/dc-logo-bg.png" alt="" />
-      </div> -->
+      </div>
     </div>
   </main>
 </template>
@@ -92,6 +92,8 @@
   display: flex;
   justify-content: center;
   padding: 30px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .generic_bg {
@@ -140,5 +142,12 @@
 }
 .logo_container {
   position: absolute;
+  z-index: 1;
+  right: 25rem;
+  bottom: -4rem;
+  img {
+    width: 27rem;
+    z-index: 1;
+  }
 }
 </style>
