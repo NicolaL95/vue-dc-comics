@@ -1,5 +1,8 @@
 <template>
   <main id="site_main">
+    <div class="jumbotron_container">
+      <img src="../assets/jumbotron.jpg" alt="" />
+    </div>
     <div class="content">
       <p class="content_here">--&#62; Content goes here &#60;--</p>
     </div>
@@ -173,6 +176,16 @@ export default {
 </script>
 
 <style lang="scss">
+.jumbotron_container {
+  margin-bottom: -5px;
+  img {
+    width: 100%;
+    object-fit: none;
+    height: 400px;
+    object-position: 100% 0;
+  }
+}
+
 .content_here {
   background-color: #1c1c1c;
   color: white;
