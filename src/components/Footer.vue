@@ -32,7 +32,7 @@
   align-items: center;
   padding: 20px 0 10px;
   button {
-    border: 1px solid #0282f9;
+    border: 2px solid #0282f9;
     padding: 7px;
     color: white;
     background-color: transparent;
