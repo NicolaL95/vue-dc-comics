@@ -4,7 +4,18 @@
       <img src="../assets/jumbotron.jpg" alt="" />
     </div>
     <div class="content">
-      <p class="content_here">--&#62; Content goes here &#60;--</p>
+      <div class="current_series">
+        <h2>CURRENT SERIES</h2>
+      </div>
+      <div class="comics_list">
+        <Comic
+          v-for="comic in comics"
+          :key="comic.series"
+          :thumb="comic.thumb"
+          :series="comic.series"
+        />
+      </div>
+      <button class="load">LOAD MORE</button>
     </div>
     <div class="generic_bg">
       <div class="generic_container">
@@ -81,6 +92,7 @@
 </template>
 
 <script>
+import Comic from "./Comic.vue";
 export default {
   data() {
     return {
@@ -172,6 +184,9 @@ export default {
       ],
     };
   },
+  components: {
+    Comic,
+  },
 };
 </script>
 
@@ -185,12 +200,41 @@ export default {
     object-position: 100% 0;
   }
 }
-
-.content_here {
+.comics_list {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content {
   background-color: #1c1c1c;
   color: white;
-  font-size: 1.3rem;
-  padding: 40px 200px;
+  position: relative;
+  padding-bottom: 20px;
+  .current_series {
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+    left: 250px;
+    font-size: 0.8rem;
+    background-color: #0282f9;
+  }
+  .content_here {
+    background-color: #1c1c1c;
+
+    font-size: 1.3rem;
+    padding: 40px 200px;
+  }
+  .load {
+    font-size: 0.8rem;
+    background-color: #0282f9;
+    color: white;
+    padding: 10px 40px;
+    border: 0;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
 }
 
 .generic_container {
